@@ -146,7 +146,8 @@ const generateInsertData = function generateInsertData(
       extra_params: {
         index_type: "IVF_FLAT",
         metric_type: "L2",
-        params: JSON.stringify({ nlist: 10 }),
+        params: 
+        ON.stringify({ nlist: 10 }),
       },
     });
     console.log("--- Create Index in Collection ---");
@@ -202,7 +203,7 @@ tsc MilvusHello.ts
 
 ## 6. Run the example
 ```bash
-node MilvusHello.ts
+node MilvusHello.js
 ```
 
 
